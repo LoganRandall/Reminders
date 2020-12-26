@@ -6,13 +6,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
   <title>Document</title>
 </head>
+
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content"><span class="card-title">Reminders</span>
+            <div class="row">
+              <form action="" id="reminder-form">
+                <div class="input-field col s12">
+                  <input type="text" name="task" id="reminder">
+                  <label for="reminder">New Reminder</label>
+                </div>
+                <input type="submit" value="Add Reminder" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="reminder-title">Reminders</h5>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filter Reminders</label>
+            </div>
+            <!-- begin list -->
+            <ul class="collection"></ul>
+            <!-- end list -->
+            <a href="" class="clear-reminders btn black">Clear Reminders</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   
-
-
+  
+  
+  
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
